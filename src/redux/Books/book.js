@@ -9,3 +9,9 @@ const addBook = (id) => {
         id
     };
 };
+const removeBook = (id) => {
+    return {
+        type: REMOVE_BOOK,
+        id
+    };
+};
