@@ -15,15 +15,15 @@ export const removeBook = (isbn) => ({
 
 const initialState = [
   {
-        isbn: 1234,
-        title: 'Learn Python',
-        author: 'John Matt',
-    },
+    isbn: 1234,
+    title: 'Learn Python',
+    author: 'John Matt',
+  },
   {
-        isbn: 1453,
-        title: 'Learn Java',
-        author: 'John Doe',
-    },
+    isbn: 1453,
+    title: 'Learn Java',
+    author: 'John Doe',
+  },
 ];
 
 const addBookReducer = (state = initialState, action) => {
