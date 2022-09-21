@@ -15,29 +15,29 @@ export const removeBook = (isbn) => ({
 
 const initialState = [
   {
-isbn: 1234,
-title: 'Learn Python',
-author: 'John Matt',
-},
+    isbn: 1234,
+    title: 'Learn Python',
+    author: 'John Matt',
+  },
   {
-isbn: 1453,
-title: 'Learn Java',
-author: 'John Doe',
-},
+    isbn: 1453,
+    title: 'Learn Java',
+    author: 'John Doe',
+  },
 ];
 
 const addBookReducer = (state = initialState, action) => {
   switch (action.type) {
-       case ADD_BOOK:
-         return {
+    case ADD_BOOK:
+      return {
         ...state,
         book: action.book,
       };
-        case REMOVE_BOOK:
-          return state.filter((isbn) => (isbn !== action.book.isbn));
-        default:
-          return state;
-    }
+    case REMOVE_BOOK:
+      return state.filter((isbn) => (isbn !== action.book.isbn));
+    default:
+      return state;
+  }
 };
 
 export default addBookReducer;
