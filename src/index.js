@@ -6,4 +6,4 @@ import store from './redux/configureStore';
 import App from './App';
 
 ReactDOM.createRoot(document.getElementById('root'))
-.render(<Provider store= {store}><App /></Provider>);
+  .render(<Provider store={store}><App /></Provider>);

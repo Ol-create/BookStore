@@ -1,4 +1,4 @@
-const CHECK = 'bookstore/categories/CHECK';
+const CHECK = 'bookLib/categories/CHECK';
 const initialState = [];
 
 export const checkStatus = () => ({

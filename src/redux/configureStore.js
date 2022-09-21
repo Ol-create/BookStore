@@ -3,10 +3,9 @@ import { combineReducers, createStore } from 'redux';
 import addBookReducer from './Books/book';
 
 const rootReducer = combineReducers({
-    addBook: addBookReducer,
+  addBook: addBookReducer,
 });
 
-const store = createStore( rootReducer, 
-    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__() );
+const store = createStore(rootReducer);
 
-    export default store;
+export default store;
