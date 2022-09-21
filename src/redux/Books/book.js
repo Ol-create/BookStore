@@ -3,16 +3,16 @@ const ADD_BOOK = "ADD_BOOK";
 const REMOVE_BOOK = 'REMOVE_BOOK';
 
 //Create Action Creator
-const addBook = (title) => {
+const addBook = ({ isbn, title, author }) => {
     return {
         type: ADD_BOOK,
-        book: { title }
+        book: { isbn, title, author, }
     };
 };
 const removeBook = (id) => {
     return {
         type: REMOVE_BOOK,
-        book: id
+        book: isbn
     };
 };
 
@@ -24,9 +24,12 @@ const initialState = [
 const addBookReducer = (state = initialState, action) => {
     switch (action.type) {
         case ADD_BOOK:
-            return action.id;
+            return { ...state, 
+                isbn: book.isbn, 
+                title: book.title, 
+                author: book.author };
         case REMOVE_BOOK:
-            return state.filter((book, index) => (index !== action.book));
+            return state.filter((isbn) => (isbn !== book.isbn));
         default:
             return state;   
     }

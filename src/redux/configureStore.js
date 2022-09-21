@@ -1,8 +1,8 @@
-import { combinReducers, createStore } from 'redux';
+import { combineReducers, createStore } from 'redux';
 
 import addBookReducer from './Books/book';
 
-const rootReducer = combinReducers({
+const rootReducer = combineReducers({
     addBook: addBookReducer,
 });
 
