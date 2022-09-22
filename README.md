@@ -8,15 +8,12 @@
 - Add a book.
 - Remove a selected book.
 
-You can find live project at https://Ol-create.github.io/book-store
-
 ## Built With
 
 - React JS with Redux
 - JSX
 - JavaScripts
 - GitFlow
-
 
 ## Development set up
 
