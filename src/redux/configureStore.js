@@ -1,5 +1,5 @@
 import { combineReducers } from 'redux';
-import { configureStore } from '@reduxjs/toolkit'
+import { configureStore } from '@reduxjs/toolkit';
 import categoriesReducer from './Categories/categories';
 import bookReducer from './books/books';
 
