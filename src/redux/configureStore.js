@@ -1,9 +1,10 @@
-import { legacy_createStore as createStore, combineReducers } from 'redux';
-import categoriesReducer from './categories/categories';
+import { combineReducers } from 'redux';
+import { configureStore } from '@reduxjs/toolkit'
+import categoriesReducer from './Categories/categories';
 import bookReducer from './books/books';
 
-const rootReducer = combineReducers({ Books: bookReducer, Categories: categoriesReducer });
+const reducer = combineReducers({ Books: bookReducer, Categories: categoriesReducer });
 
-const store = createStore(rootReducer);
+const store = configureStore({ reducer });
 
 export default store;
