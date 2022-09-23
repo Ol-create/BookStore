@@ -22,6 +22,7 @@ function AddBook() {
       id: uuidv4(),
       title: inputText.title,
       author: inputText.author,
+      category: 'default',
     };
 
     dispatch(createBook(newBook));
