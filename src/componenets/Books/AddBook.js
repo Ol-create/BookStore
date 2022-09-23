@@ -33,7 +33,7 @@ function AddBook() {
   };
   return (
     <>
-      <h3 className="heading">ADD NEW BOOK</h3>
+      <h3 className="form-title">ADD NEW BOOK</h3>
       <form className="form-container" onSubmit={submitHandler}>
         <input
           type="text"
@@ -53,7 +53,7 @@ function AddBook() {
           onChange={onChange}
           required
         />
-        <button type="submit"> Add Book</button>
+        <button type="submit" className="add-book-button"> Add Book</button>
       </form>
     </>
   );
